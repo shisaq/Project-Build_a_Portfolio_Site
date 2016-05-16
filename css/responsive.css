@@ -1,6 +1,6 @@
 @media screen and (min-width: 500px) {
   header {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   h1 {
@@ -29,10 +29,6 @@
 }
 
 @media screen and (min-width: 820px) {
-  header {
-    margin-top: 60px;
-  }
-
   h1 {
     font-size: 42px;
   }
