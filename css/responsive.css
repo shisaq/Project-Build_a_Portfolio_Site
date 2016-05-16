@@ -1,0 +1,74 @@
+@media screen and (min-width: 500px) {
+  header {
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  .content-content {
+    display: flex;
+    flex-wrap: wrap;
+    /*make sure the contents are in center position*/
+    justify-content: center;
+  }
+
+  .works {
+    width: calc((100% - 8px)/2);
+  }
+
+/*make the magrin-right of the first .works to 8px*/
+  .works:nth-child(1) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  header {
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .content-title {
+    text-align: left;
+    padding-left: 8px;
+  }
+
+/*make the margin-right of every .works into 8px, except the last one */
+  .works {
+    width: calc((100% - 16px)/3);
+    margin-right: 8px;
+  }
+
+  .works:last-of-type {
+    margin-right: 0;
+  }
+}
+
+/*maximize the page to 1140px*/
+@media screen and (min-width: 1140px) {
+  body {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+}
