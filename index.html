@@ -12,13 +12,13 @@
   <title>Design Morkup Portfolio</title>
 </head>
 <body>
-
-  <!--Header contains logo and the title of the page-->
-  <header>
+  <div class="container">
+    <!--Header contains logo and the title of the page-->
+  <header class="header">
     <img class="logo" src="images/main_logo.png" alt="logo">
     <div class="header_title">
-      <h1>ShisaQ</h1>
-      <h4>Front-end Ninja</h4>
+      <h1 class="main-title">ShisaQ</h1>
+      <h4 class="main-title-description">Front-end Ninja</h4>
     </div>
   </header>
 
@@ -30,7 +30,7 @@
   </div>
 
   <!-- Main part -->
-  <section>
+  <section class="main">
 
     <h2 class="content-title">Fetured Work</h2>
 
@@ -38,26 +38,26 @@
     <div class="content-content">
       <article class="works">
         <img class="work-capture" src="images/house.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/house-400_1x.jpg 400w, images/house-400_2x.jpg 800w" alt="github" data-toggle="modal" data-target="#Modal1">
-        <h2>Github</h2>
+        <h2 class="works-title">Github</h2>
         <a class="zocial-github" href="https://github.com">&nbsp;https://github.com</a>
       </article>
       <article class="works">
         <img class="work-capture" src="images/Temple_of_Heaven.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/Temple_of_Heaven-400_1x.jpg 400w, images/Temple_of_Heaven-400_2x.jpg 800w" alt="google" data-toggle="modal" data-target="#Modal2">
-        <h2>Google</h2>
+        <h2 class="works-title">Google</h2>
         <a class="zocial-google" href="https://www.google.com">&nbsp;https://www.google.com</a>
       </article>
       <article class="works">
         <img class="work-capture" src="images/butterbeer.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/butterbeer-400_1x.jpg 400w, images/butterbeer-400_2x.jpg 800w" alt="ShisaQ" data-toggle="modal" data-target="#Modal3">
-        <h2>ShisaQ</h2>
+        <h2 class="works-title">ShisaQ</h2>
         <a class="zocial-quora" href="https://www.shisaq.com">&nbsp;https://www.shisaq.com</a>
       </article>
     </div>
 
   </section>
 
-  <footer>
-    <p>
-      Made by <a href="http://shisaq.com" target="blank">ShisaQ</a>. Supported by <a href="http://udacity.com" target="blank">Udacity</a>.
+  <footer class="footer">
+    <p class="footer-content">
+      Made by <a class="footer-description" href="http://shisaq.com" target="blank">ShisaQ</a>. Supported by <a href="http://udacity.com" target="blank">Udacity</a>.
     </p>
   </footer>
 
@@ -113,5 +113,6 @@
         </div>
       </div>
     </div>
+  </div>
 </body>
 </html>
