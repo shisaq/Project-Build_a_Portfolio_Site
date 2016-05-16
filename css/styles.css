@@ -124,7 +124,7 @@ footer {
   margin-top: 10px;
 }
 
-/*modal and fade, from bootstrap*/
+/*modal and fade, copied from bootstrap.css v3.3.5 (http://getbootstrap.com)*/
 .modal-open {
   overflow: hidden;
 }
