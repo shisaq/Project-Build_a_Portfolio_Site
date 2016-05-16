@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand:300,400'>
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" ></script>
   <title>Design Morkup Portfolio</title>
 </head>
 <body>
@@ -35,21 +38,74 @@
     <!-- The content of the main part -->
     <div class="content-content">
       <article class="works">
-        <img class="work-capture" src="images/house.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/house-400_1x.jpg 1x, images/house-400_2x.jpg 2x" alt="github">
+        <img class="work-capture" src="images/house.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/house-400_1x.jpg 1x, images/house-400_2x.jpg 2x" alt="github" data-toggle="modal" data-target="#Modal1">
         <h2>Github</h2>
         <a class="zocial-github" href="https://github.com">&nbsp;https://github.com</a>
       </article>
       <article class="works">
-        <img class="work-capture" src="images/Temple_of_Heaven.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/Temple_of_Heaven-400_1x.jpg 1x, images/Temple_of_Heaven-400_2x.jpg 2x" alt="google">
+        <img class="work-capture" src="images/Temple_of_Heaven.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/Temple_of_Heaven-400_1x.jpg 1x, images/Temple_of_Heaven-400_2x.jpg 2x" alt="google" data-toggle="modal" data-target="#Modal2">
         <h2>Google</h2>
         <a class="zocial-google" href="https://www.google.com">&nbsp;https://www.google.com</a>
       </article>
       <article class="works">
-        <img class="work-capture" src="images/butterbeer.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/butterbeer-400_1x.jpg 1x, images/butterbeer-400_2x.jpg 2x" alt="shisaq">
+        <img class="work-capture" src="images/butterbeer.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/butterbeer-400_1x.jpg 1x, images/butterbeer-400_2x.jpg 2x" alt="ShisaQ" data-toggle="modal" data-target="#Modal3">
         <h2>ShisaQ</h2>
         <a class="zocial-quora" href="https://www.shisaq.com">&nbsp;https://www.shisaq.com</a>
       </article>
     </div>
   </section>
+
+<!-- javascript content -->
+  <!-- Modal1, connected with the first block of the main content, will show after clicking the house.jpg -->
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel1">Github</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-rounded center-block" src="images/house.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/house-400_1x.jpg 1x, images/house-400_2x.jpg 2x" alt="Github">
+            <p>This is hasdgsadgsdhgsadjfkdsf</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal2, connected with the second block of the main content, will show after clicking the Temple_of_Heaven.jpg-->
+    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">Google</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-rounded center-block" src="images/Temple_of_Heaven.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/Temple_of_Heaven-400_1x.jpg 1x, images/Temple_of_Heaven-400_2x.jpg 2x" alt="Google">
+            <p>In this space, you may see some hallmarks from all over the world, including buildings, vehicles, boards etc. You'll be able to experience the colorful stuffs made by the local people!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal3, connected with the last block of the main content, will show after clicking the Temple_of_Heaven.jpg-->
+    <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel3">ShisaQ</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-rounded center-block" src="images/butterbeer.jpg" sizes="(max-width: 500px) 100vw, ((min-width: 501px) and (max-width: 820px)) 50vw, (min-width: 821px) 33.3vw" srcset="images/butterbeer-400_1x.jpg 1x, images/butterbeer-400_2x.jpg 2x" alt="ShisaQ">
+            <p>I like trevalling. One of the most important reasons is I like different sences from different places. When you get into a new area, the weather, the water, the air, the culture and the people are always unique. That's amazing, hah?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
