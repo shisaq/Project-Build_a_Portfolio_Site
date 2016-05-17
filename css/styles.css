@@ -16,7 +16,7 @@ div,
 img {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 h1 {
@@ -53,8 +53,12 @@ a:visited {
 
 /* make big parts to fit the screen */
 header,
-section {
-  display: flex;
+section,
+main {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -86,7 +90,7 @@ header {
   height: 100px;
 }
 
-.header_title h1 {
+.header-title-name {
   height: 55%;
   vertical-align: middle;
 }
